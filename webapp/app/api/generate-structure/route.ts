@@ -7,7 +7,7 @@ export async function POST(req: Request) {
   const prompt = `Crie um sum\u00e1rio de monografia com base no seguinte contexto: ${JSON.stringify(body)}. Responda em JSON no formato {"chapters": [{"title": "", "subchapters": ["", ""]}]}`;
 
   const completion = await openai.chat.completions.create({
-    model: 'gpt-4o',
+    model: process.env.OPENAI_MODEL || 'gpt-3.5-turbo',
     messages: [{ role: 'user', content: prompt }],
   });
 

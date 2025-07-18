@@ -9,7 +9,11 @@ NEXT_PUBLIC_FIREBASE_API_KEY=yourkey
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=yourdomain
 NEXT_PUBLIC_FIREBASE_PROJECT_ID=yourproject
 OPENAI_API_KEY=sk-...
+OPENAI_MODEL=gpt-3.5-turbo
 ```
+
+
+Run `npm install` to install dependencies before building or running the dev server.
 
 ## Getting Started
 
